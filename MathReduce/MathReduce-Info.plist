@@ -41,10 +41,10 @@
 			<key>NSMenuItem</key>
 			<dict>
 				<key>default</key>
-				<string>Test Encrypt Text</string>
+				<string>Math Reduce</string>
 			</dict>
 			<key>NSMessage</key>
-			<string>simpleEncrypt</string>
+			<string>reduceMath</string>
 			<key>NSPortName</key>
 			<string>MathReduce</string>
 			<key>NSSendTypes</key>

@@ -310,8 +310,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\necho Copying to app folder\ncp -Rf $CODESIGNING_FOLDER_PATH \"/Applications\"\necho Updating services\n/System/Library/CoreServices/pbs -update";
-			showEnvVarsInLog = 0;
+			shellScript = "#!/bin/bash\n\necho Removing any existent installations\nrm -r \"/Applications/$FULL_PRODUCT_NAME\"\n\necho Copying to app folder\ncp -Rf $CODESIGNING_FOLDER_PATH \"/Applications/\"\n\necho Updating services\n/System/Library/CoreServices/pbs\n/System/Library/CoreServices/pbs -flush\n/System/Library/CoreServices/pbs -update";
 		};
 /* End PBXShellScriptBuildPhase section */
 
