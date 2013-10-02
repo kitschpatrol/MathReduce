@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>LSUIElement</key>
-	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -28,6 +26,8 @@
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2013 Eric Mika. All rights reserved.</string>
+	<key>LSBackgroundOnly</key>
+	<true/>
 	<key>NSServices</key>
 	<array>
 		<dict>

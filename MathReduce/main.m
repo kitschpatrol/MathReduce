@@ -21,8 +21,10 @@ int main(int argc, char *argv[])
 	@autoreleasepool
     {
         KPMathReduceServiceProvider *service = [[KPMathReduceServiceProvider alloc] init];
-        NSRegisterServicesProvider(service, @"reduceMath");
-        [[NSRunLoop currentRunLoop] run];
+        NSRegisterServicesProvider(service, @"MathReduce");
+        
+        // Run for five seconds max...
+        [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:5]];
 	}
     
 	return 0;
