@@ -8,7 +8,7 @@ MathReduce
 
 MathReduce is a system-wide Mac OS service that will calculate simple mathematical expressions in chunk of selected anywhere in the system.
 
-Just highlight some text and press <kbd>⌘ Command</kbd>-<kbd>⇧ Shift</kbd>-<kbd>M</kbd> to see bits of math replaced with their values.
+Just highlight some text and press <kbd>⌘ Command</kbd>-<kbd>⇧ Shift</kbd>-<kbd>M</kbd> to see bits of math replaced with reduced values.
 
 
 #####Example
@@ -27,16 +27,16 @@ Press <kbd>⌘ Command</kbd>-<kbd>⇧ Shift</kbd>-<kbd>M</kbd> and the mystery m
 * I wonder what the value of 250643.5340249492 is?
   
 
-In additiona to the system-wide keyboard shortcut, MathReduce is also accesible through any application's services menu (assuming there's text selected).
+In addition to the system-wide keyboard shortcut, MathReduce is also accessible through any application's services menu (assuming there's text selected).
 
 And that's it. In essence, any editable text field in the system becomes a canvas for extracting values from mathematical expressions.
 
-Note some of the neat things in the example above… contants like PI and e are available, as well as trignonometric functions. See the full list of [operators](https://github.com/davedelong/DDMathParser/wiki/Operators) and [functions](https://github.com/davedelong/DDMathParser/wiki/Built-in-Functions) supported by MathReduce's underlying parser.
+Note some of the neat things in the example above… constants like PI and e are available, as well as trigonometric functions. See the full list of [operators](https://github.com/davedelong/DDMathParser/wiki/Operators) and [functions](https://github.com/davedelong/DDMathParser/wiki/Built-in-Functions) supported by MathReduce's underlying parser.
 
 #####Installation
 TODO: A release build with a binary
 
-For now… just build the project in Xcode. This will invoke a script that copies the resulting binary `~/Library/Services` and calls a few additional commands to refresh the system-wide services roster. (However, logging out and logging back in still might be necessary to get math reduce to show up in the services menu and work properly via the shortcut.
+For now… just build the project in Xcode. This will invoke a script that copies the resulting `MathReduce.service` binary to `~/Library/Services`, and then calls a few additional commands to refresh the system-wide services roster. (However, logging out and logging back in still might be necessary to get math reduce to show up in the services menu and in order for it to work properly via the shortcut.)
 
 If you don't care for the default keyboard shortcut, it's easy to change to your liking via System Preferences --> Keyboard --> Keyboard Shortcuts --> Services.
 
@@ -49,10 +49,9 @@ The <kbd>⌘ Command</kbd>-<kbd>⇧ Shift</kbd>-<kbd>M</kbd> shortcut is in conf
 2. Search for "view memory" in the key binding search bar.
 3. Clear the "key" field for the Debug Workflow > View Memory entry.
 
-Since MathReduce uses the Mac's native services framework, it's only compatible with thext fields that are implemented . Luckily this turns out to be most 
+Since MathReduce uses the Mac's native services framework, it's only compatible with text fields implemented with Mac-native toolkits. (Luckily this turns out to be most of your day-to-day text fields.)
 
 
 #####Thanks
 
 MathReduce is a very thin wrapper around Dave DeLong's superlative [DDMathParser](https://github.com/davedelong/DDMathParser) library.
-
