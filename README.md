@@ -6,7 +6,7 @@ MathReduce
 
 #####Overview
 
-MathReduce is a system-wide Mac OS service that will calculate simple mathematical expressions a chunk of selected text from anywhere in the system.
+MathReduce is a system-wide Mac OS service that will calculate simple mathematical expressions in chunk of selected anywhere in the system.
 
 Just highlight some text and press <kbd>⌘ Command</kbd>-<kbd>⇧ Shift</kbd>-<kbd>M</kbd> to see bits of math replaced with their values.
 
