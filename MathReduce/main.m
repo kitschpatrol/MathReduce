@@ -6,9 +6,24 @@
 //  Copyright (c) 2013 Eric Mika. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+// Helpful tutorial on packaging apps as services:
+// http://www.notesfromandy.com/2013/04/05/writing-a-service-bundle/
 
-int main(int argc, const char * argv[])
+// Template project:
+// https://github.com/aglee/copyselector
+
+
+#import <Cocoa/Cocoa.h>
+#import "KPMathReduceServiceProvider.h"
+
+int main(int argc, char *argv[])
 {
-    return NSApplicationMain(argc, argv);
+	@autoreleasepool
+    {
+        KPMathReduceServiceProvider *service = [[KPMathReduceServiceProvider alloc] init];
+        NSRegisterServicesProvider(service, @"reduceMath");
+        [[NSRunLoop currentRunLoop] run];
+	}
+    
+	return 0;
 }

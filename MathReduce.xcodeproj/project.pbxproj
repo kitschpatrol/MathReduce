@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2568DA0B17FB9D6700F37D6C /* KPMathReduceServiceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2568DA0A17FB9D6700F37D6C /* KPMathReduceServiceProvider.m */; };
 		2575BAA817FB4B7200A349B1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2575BAA717FB4B7200A349B1 /* Cocoa.framework */; };
 		2575BAB217FB4B7200A349B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2575BAB017FB4B7200A349B1 /* InfoPlist.strings */; };
 		2575BAB417FB4B7200A349B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2575BAB317FB4B7200A349B1 /* main.m */; };
-		2575BAB817FB4B7200A349B1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2575BAB617FB4B7200A349B1 /* Credits.rtf */; };
-		2575BABB17FB4B7200A349B1 /* KPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2575BABA17FB4B7200A349B1 /* KPAppDelegate.m */; };
-		2575BABE17FB4B7200A349B1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2575BABC17FB4B7200A349B1 /* MainMenu.xib */; };
 		2575BAC017FB4B7200A349B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2575BABF17FB4B7200A349B1 /* Images.xcassets */; };
 		25973A9B17FB5B4F0086AFD1 /* _DDFunctionContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 25973A6F17FB5B4F0086AFD1 /* _DDFunctionContainer.m */; };
 		25973A9C17FB5B4F0086AFD1 /* _DDFunctionExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 25973A7117FB5B4F0086AFD1 /* _DDFunctionExpression.m */; };
@@ -38,7 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2575BAA417FB4B7200A349B1 /* MathReduce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathReduce.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2568DA0917FB9D6700F37D6C /* KPMathReduceServiceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPMathReduceServiceProvider.h; sourceTree = "<group>"; };
+		2568DA0A17FB9D6700F37D6C /* KPMathReduceServiceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPMathReduceServiceProvider.m; sourceTree = "<group>"; };
+		2575BAA417FB4B7200A349B1 /* MathReduce.service */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathReduce.service; sourceTree = BUILT_PRODUCTS_DIR; };
 		2575BAA717FB4B7200A349B1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		2575BAAA17FB4B7200A349B1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		2575BAAB17FB4B7200A349B1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -47,10 +47,6 @@
 		2575BAB117FB4B7200A349B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2575BAB317FB4B7200A349B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2575BAB517FB4B7200A349B1 /* MathReduce-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MathReduce-Prefix.pch"; sourceTree = "<group>"; };
-		2575BAB717FB4B7200A349B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		2575BAB917FB4B7200A349B1 /* KPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPAppDelegate.h; sourceTree = "<group>"; };
-		2575BABA17FB4B7200A349B1 /* KPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPAppDelegate.m; sourceTree = "<group>"; };
-		2575BABD17FB4B7200A349B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2575BABF17FB4B7200A349B1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2575BAC617FB4B7200A349B1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		25973A6E17FB5B4F0086AFD1 /* _DDFunctionContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DDFunctionContainer.h; sourceTree = "<group>"; };
@@ -125,7 +121,7 @@
 		2575BAA517FB4B7200A349B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2575BAA417FB4B7200A349B1 /* MathReduce.app */,
+				2575BAA417FB4B7200A349B1 /* MathReduce.service */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,11 +149,10 @@
 		2575BAAD17FB4B7200A349B1 /* MathReduce */ = {
 			isa = PBXGroup;
 			children = (
-				2575BAB917FB4B7200A349B1 /* KPAppDelegate.h */,
-				2575BABA17FB4B7200A349B1 /* KPAppDelegate.m */,
-				2575BABC17FB4B7200A349B1 /* MainMenu.xib */,
 				2575BABF17FB4B7200A349B1 /* Images.xcassets */,
 				2575BAAE17FB4B7200A349B1 /* Supporting Files */,
+				2568DA0917FB9D6700F37D6C /* KPMathReduceServiceProvider.h */,
+				2568DA0A17FB9D6700F37D6C /* KPMathReduceServiceProvider.m */,
 			);
 			path = MathReduce;
 			sourceTree = "<group>";
@@ -169,7 +164,6 @@
 				2575BAB017FB4B7200A349B1 /* InfoPlist.strings */,
 				2575BAB317FB4B7200A349B1 /* main.m */,
 				2575BAB517FB4B7200A349B1 /* MathReduce-Prefix.pch */,
-				2575BAB617FB4B7200A349B1 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -253,7 +247,7 @@
 			);
 			name = MathReduce;
 			productName = MathReduce;
-			productReference = 2575BAA417FB4B7200A349B1 /* MathReduce.app */;
+			productReference = 2575BAA417FB4B7200A349B1 /* MathReduce.service */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -291,8 +285,6 @@
 			files = (
 				2575BAB217FB4B7200A349B1 /* InfoPlist.strings in Resources */,
 				2575BAC017FB4B7200A349B1 /* Images.xcassets in Resources */,
-				2575BAB817FB4B7200A349B1 /* Credits.rtf in Resources */,
-				2575BABE17FB4B7200A349B1 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +302,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\n\necho Removing any existent installations\nrm -r \"/Applications/$FULL_PRODUCT_NAME\"\n\necho Copying to app folder\ncp -Rf $CODESIGNING_FOLDER_PATH \"/Applications/\"\n\necho Updating services\n/System/Library/CoreServices/pbs\n/System/Library/CoreServices/pbs -flush\n/System/Library/CoreServices/pbs -update";
+			shellScript = "#!/bin/bash\n\necho Removing any existing installations\necho $INSTALL_PATH/$FULL_PRODUCT_NAME\nrm -rf $INSTALL_PATH/$FULL_PRODUCT_NAME\n\n#echo Copying to app folder\ncp -Rf $CODESIGNING_FOLDER_PATH $INSTALL_PATH\n\necho Updating services\n/System/Library/CoreServices/pbs\n/System/Library/CoreServices/pbs -flush\n/System/Library/CoreServices/pbs -update";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -320,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25973AA017FB5B4F0086AFD1 /* _DDNumberExpression.m in Sources */,
+				2568DA0B17FB9D6700F37D6C /* KPMathReduceServiceProvider.m in Sources */,
 				25973AA817FB5B4F0086AFD1 /* DDExpression.m in Sources */,
 				25973AA617FB5B4F0086AFD1 /* _DDVariableExpression.m in Sources */,
 				25973AAB17FB5B4F0086AFD1 /* DDMathStringTokenizer.m in Sources */,
@@ -331,7 +324,6 @@
 				25973AA217FB5B4F0086AFD1 /* _DDOperatorInfo.m in Sources */,
 				25973AA317FB5B4F0086AFD1 /* _DDOperatorTerm.m in Sources */,
 				2575BAB417FB4B7200A349B1 /* main.m in Sources */,
-				2575BABB17FB4B7200A349B1 /* KPAppDelegate.m in Sources */,
 				25973AA117FB5B4F0086AFD1 /* _DDNumberTerm.m in Sources */,
 				25973AA717FB5B4F0086AFD1 /* _DDVariableTerm.m in Sources */,
 				25973A9E17FB5B4F0086AFD1 /* _DDFunctionUtilities.m in Sources */,
@@ -354,22 +346,6 @@
 				2575BAB117FB4B7200A349B1 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		2575BAB617FB4B7200A349B1 /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2575BAB717FB4B7200A349B1 /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		2575BABC17FB4B7200A349B1 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2575BABD17FB4B7200A349B1 /* Base */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -451,8 +427,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MathReduce/MathReduce-Prefix.pch";
 				INFOPLIST_FILE = "MathReduce/MathReduce-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Services";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
+				WRAPPER_EXTENSION = service;
 			};
 			name = Debug;
 		};
@@ -464,8 +441,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MathReduce/MathReduce-Prefix.pch";
 				INFOPLIST_FILE = "MathReduce/MathReduce-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Services";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
+				WRAPPER_EXTENSION = service;
 			};
 			name = Release;
 		};
