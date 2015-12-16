@@ -9,7 +9,7 @@
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>com.kitschpatrol.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -22,17 +22,15 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSBackgroundOnly</key>
+	<true/>
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2013 Eric Mika. All rights reserved.</string>
-	<key>LSBackgroundOnly</key>
-	<true/>
 	<key>NSServices</key>
 	<array>
 		<dict>
-			<key>NSRequiredContext</key>
-			<dict/>
 			<key>NSKeyEquivalent</key>
 			<dict>
 				<key>default</key>
@@ -47,11 +45,13 @@
 			<string>reduceMath</string>
 			<key>NSPortName</key>
 			<string>MathReduce</string>
-			<key>NSSendTypes</key>
+			<key>NSRequiredContext</key>
+			<dict/>
+			<key>NSReturnTypes</key>
 			<array>
 				<string>NSStringPboardType</string>
 			</array>
-			<key>NSReturnTypes</key>
+			<key>NSSendTypes</key>
 			<array>
 				<string>NSStringPboardType</string>
 			</array>
